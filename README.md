@@ -28,7 +28,7 @@ oEnsure proper handling of HTTP requests and responses.
 https://github.com/gertrude654/Advanced-Web-Sorting-Algorithms-GTP-Lab.git
 
 - Video link:
-Advanced web sorting algorithms (loom.com)
+https://www.loom.com/share/94fd84699c77408e95c5ce94f210c85f
 
 Configure Apache Tomcat:
 Copy the generated WAR file (target/sorting.war) to the Tomcat webapps directory.
