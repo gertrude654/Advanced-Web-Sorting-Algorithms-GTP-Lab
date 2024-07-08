@@ -34,6 +34,7 @@ public class StudentService implements StudentDao{
         Student Student = getStudent(id);
         if (Student != null) {
             Student.setName(newStudent.getName());
+            Student.setAge(newStudent.getAge());
         }
     }
 

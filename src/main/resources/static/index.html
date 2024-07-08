@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Student Management</h1>
+    <form id="addStudentForm" class="mb-4">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <input type="text" class="form-control" id="studentId" placeholder="ID" required>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="studentName" placeholder="Name" required>
+            </div>
+            <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Add Student</button>
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="studentsTableBody">
+        <!-- Rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <div class="text-center mt-4">
+        <button class="btn btn-secondary" onclick="sortStudents('heap')">Heap Sort</button>
+        <button class="btn btn-secondary" onclick="sortStudents('quick')">Quick Sort</button>
+        <button class="btn btn-secondary" onclick="sortStudents('merge')">Merge Sort</button>
+        <button class="btn btn-secondary" onclick="sortStudents('radix')">Radix Sort</button>
+        <button class="btn btn-secondary" onclick="sortStudents('bucket')">Bucket Sort</button>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
